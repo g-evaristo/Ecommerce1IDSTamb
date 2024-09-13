@@ -1,4 +1,5 @@
 const fs = require("fs");
+const controlCliente = require("./cliente_control");
 
 class Rotas {
     static getPaginaIndex(req, res) {
@@ -22,5 +23,7 @@ class Rotas {
         res.send(content);
     }
 }
+
+Rotas.prototype.cadastraCliente = controlCliente.cadastraCliente;
 
 exports.rotas = Rotas;
