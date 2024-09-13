@@ -1,0 +1,200 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family: arial;
+	
+}
+.center{text-align:center;}
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: #333;
+	width: 100%;
+	top: 0;
+}
+li {float: left;}
+li a {
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+}
+li a:hover:not(.active) {background-color: #111;}
+.active {background-color: #dd203c;}
+.active:hover {background-color: #E76276;}
+.cupom{
+	background-color:#eaeaea;
+	padding:10px;
+}
+.cupom a{
+	color: #000;
+}
+.cupom a:hover{
+	color: #dd203c;
+}
+body {
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+	margin: 0;
+}
+.content {
+	flex: 1;
+}
+.product_title{
+	width:100%;
+	border-bottom:5px solid #dd203c;
+}
+.product_row{
+	width:100%;
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+.product_container{
+	width: 20%;
+	margin: 1%;
+	text-align: center;
+}
+.product_itens{
+	width: 100%;
+}	
+.product_container p{
+	text-align: center;
+}
+.product_container:hover{
+	color: #DD203C;
+}
+.product_container img:hover{
+	border: 1px solid #dd203c;
+}
+.btn_comprar {
+	display: inline-block;
+	margin-top: 10px;
+	padding: 10px 20px;
+	background-color: #dd203c;
+	color: white;
+	border: none;
+	border-radius: 25px;
+	cursor: pointer;
+	text-decoration: none;
+}
+.btn_comprar:hover {
+    background-color: #E76276;
+}
+.desconto{
+	text-decoration: line-through;
+    color: #999999;
+}
+.rodape{
+	background-color: #333;
+	color: white;
+	text-align: center;
+	padding: 10px 0;
+	bottom: 0;
+	width: 100%;
+}
+.link_rodape{
+	text-decoration: none;
+	color: white;
+}
+.link_rodape:hover{
+	text-decoration: underline;
+	color: white;
+}
+.texto_rodape{
+	text-align: center;
+}
+.img-social-media{
+	width: 3%;
+	margin-right: 20px;
+	margin-bottom: 20px;
+}
+.login-main{
+	flex: 1;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 50%;
+}
+.login-header{
+	background-color: #333;
+	/*
+	Ordem:
+	1º valor: lado superior esquerdo
+	2º valor: lado superior direito
+	3º valor: lado inferior direito
+	4º valor: lado inferior esquerdo
+	*/
+	border-radius: 25px 25px 0px 0px;
+}
+.login-header h1{
+	text-align: center;
+	color: #ffffff;
+	padding: 12px;
+}
+.login-content{
+	background-color: #EAEAEA;
+	border-radius: 0px 0px 25px 25px;
+	text-align: center;
+}
+.login-content input{
+	font-size: 15px;
+	padding: 20px;
+	width: 50%;
+	background-color: #EAEAEA;
+	border-top: none;
+	border-left: none;
+	border-right: none;
+	border-bottom: 2px solid #333;
+	color: #333;
+}
+.login-content input::placeholder{
+	color: #333;
+}
+.login-content input:focus{
+	outline: none;
+	border-top: none;
+	border-left: none;
+	border-right: none;
+    border-bottom: 2px solid #E76276;
+    box-shadow: 0 0 5px #E76276;
+}
+.login-content input:focus::placeholder{
+	color: #E76276;
+}
+.login-content button{
+	padding: 12px;
+	border: none;
+	font-size: 15px;
+	background-color: #333;
+	width: 55%;
+	color: #FFFFFF;
+}
+.login-content button:hover{
+	border: none;
+	background-color: #515151;
+	cursor: pointer;
+}
+.login-content hr{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 55%;
+}
+.link_login img{
+	width: 5%;
+}
+.esqueci-senha:link,
+.esqueci-senha:visited{
+	color: #333;
+}
+.esqueci-senha:hover{
+	color: #E76276;
+}
+.login-content p{
+	color: #333;
+}
