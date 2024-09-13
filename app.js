@@ -2,7 +2,6 @@
 const express = require("express");
 const path = require("path");
 const { rotas } = require("./control/routes");
-const { cadastraCliente } = require("./control/cliente_control");
 //Definindo número da porta
 const port = 8080;
 //Definindo caminhos
@@ -21,7 +20,7 @@ app.use(express.json());
 app.use(express.urlencoded({extended: true}));
 
 //Chamando rotas APIs
-app.post("/cadastrar", cadastraCliente);
+app.post("/cadastrar", rotas.cadastraCliente);
 
 //Chamando rotas HTML
 app.get("/", rotas.getPaginaIndex);

@@ -22,8 +22,7 @@ class Rotas {
         const content = fs.readFileSync("view/login.html", "utf-8");
         res.send(content);
     }
+    static cadastraCliente = controlCliente.cadastraCliente
 }
-
-Rotas.prototype.cadastraCliente = controlCliente.cadastraCliente;
 
 exports.rotas = Rotas;

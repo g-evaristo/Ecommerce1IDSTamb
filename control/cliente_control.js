@@ -5,7 +5,7 @@ async function cadastraCliente(req, res) {
     const dados = req.body;
     const resposta = await cliente.createClient(dados);
     console.log(resposta);
-    res.json(resposta);
+    res.status(resposta["statusCode"]).json(resposta);
 }
 
 exports.cadastraCliente = cadastraCliente;
